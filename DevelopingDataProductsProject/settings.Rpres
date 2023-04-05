@@ -38,5 +38,5 @@ Variable Correlation
 ```{r, echo=TRUE}
 library(datasets)
 data("iris")
-cor(iris)
+cor(iris[,1:4])
 ```

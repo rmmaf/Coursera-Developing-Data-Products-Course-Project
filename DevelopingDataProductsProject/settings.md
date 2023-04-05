@@ -10,7 +10,7 @@ Introduction
 This presentation is done as part of the final course project for 'Developing Data Products' course in the Data Science Specialization track by John Hopkins University on Coursera.
 
 The web application is hosted on the link below:
-
+https://rmmaf98.shinyapps.io/developingdataproductsproject/
 
 
 Application Overview
@@ -44,7 +44,16 @@ Variable Correlation
 ========================================================
 
 
+```r
+library(datasets)
+data("iris")
+cor(iris[,1:4])
+```
 
 ```
-Error in cor(iris) : 'x' deve ser numérico
+             Sepal.Length Sepal.Width Petal.Length Petal.Width
+Sepal.Length    1.0000000  -0.1175698    0.8717538   0.8179411
+Sepal.Width    -0.1175698   1.0000000   -0.4284401  -0.3661259
+Petal.Length    0.8717538  -0.4284401    1.0000000   0.9628654
+Petal.Width     0.8179411  -0.3661259    0.9628654   1.0000000
 ```
